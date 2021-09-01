@@ -13,10 +13,10 @@ while more_jokes:
 		prompt = "\nReply again to get another joke: "
 		response = input(prompt)
 		more_jokes = True
-	
+
 	else:
 		print('Too bad...')
 		more_jokes = False
-else:
-	print("\nHope you enjoyed all the jokes. Good-bye!")
+
+print("\nHope you enjoyed all the jokes. Good-bye!")
 
