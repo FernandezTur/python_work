@@ -1,5 +1,3 @@
-"""A set of classes used to represent gas and electric cars."""
-
 class Car():
 	"""A simple attempt to represent a car."""
 	
@@ -33,6 +31,7 @@ class Car():
 		"""Add the given ammount to the odometer reading."""
 		self.odometer_reading += miles
 
+
 class Battery():
 	"""A simple attempt to model a battery for an electric car."""
 	
@@ -55,6 +54,7 @@ class Battery():
 		message += " miles on a full charge."
 		print(message)
 
+
 class ElectricCar(Car):
 	"""Represent aspects of a car, specific to electric vehicles."""
 	
@@ -65,3 +65,8 @@ class ElectricCar(Car):
 		"""
 		super().__init__(make, model, year)
 		self.battery = Battery()
+		
+my_tesla = ElectricCar('tesla', 'model s', 2016)
+print(my_tesla.get_descriptive_name())
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
